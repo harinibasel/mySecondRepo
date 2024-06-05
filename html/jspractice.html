@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        var firstname;
+        firstname = "Welcome";
+        document.write(firstname);
+        document.write("<br />");
+        firstname = "XYZ";
+        document.write("firstname")
+
+        function add() {
+            let num1 = document.getElementById('number1').value
+            let num2 = document.getElementById('number2').value
+            // alert(num1)
+            alert(Number(num1) + Number(num2))
+        }
+        function sub() {
+            let num1 = document.getElementById('number1').value
+            let num2 = document.getElementById('number2').value
+            // alert(num1)
+            alert(Number(num1) - Number(num2))
+        }
+        function mul(){
+            let num1 = document.getElementById('number1').value
+            let num2 = document.getElementById('number2').value
+            //alert(num1)
+            alert(Number(num1) * Number(num2))
+        }
+        
+        function div(){
+            let num1 =document.getElementById('number1').value
+            let num2 = document.getElementById('number2').value
+            //alert(num1)
+            alert(Number(num1) / Number(num2))
+        }
+    </script>
+    <input type="number" id="number1" name="volvo">
+    <input type="number" id="number2" name="glanza">
+    <input type="button" onclick="add()" value="Add">
+    <input type="button" onclick="sub()" value="sub">
+    <input type="button" onclick="mul()" value="mul">
+    <input type="button" onclick="div()" value=" div">
+
+</body>
+
+</html>

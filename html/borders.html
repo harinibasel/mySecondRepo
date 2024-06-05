@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        internal css borders
+    </title>
+    <style>
+        .inner {
+            background-color: brown;
+            border: 5px solid green;
+            padding:10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="inner">Border 1</h1>
+    <h2>Border 2</h2>
+    <div class="outer" style="background-color: aqua;border: 5px solid blue;">
+        <div class="inner">
+            Inner 1
+        </div>
+        <div class="inner">
+            Inner 2
+        </div>
+        <div class="inner">
+            Inner 3
+        </div>
+    </div>
+</body>

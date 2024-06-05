@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body {
+            background-color: rgb(153, 103, 200);
+            border:2px solid rgb(165, 67, 85);
+        }
+
+        .form {
+            width: 500px;
+            box-sizing: border-box;
+            margin-left:10px;
+            margin-bottom: 10px;
+        }
+
+        .form div label {
+            width: 107px;
+            display: inline-block;
+        }
+
+        .form div {
+            margin: 10px;
+        }
+
+        .form fieldset {
+            border: 0;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+     <form class="form" >
+        <h1 style="font-style: italic;border:2px solid greenyellow; text-align: center; ">REGISTRATION FORM</h1>
+
+        <div>
+            <label for="firstname">First Name :</label>
+            <input type="text" placeholder="enter first name " id="firstname" name="firstname" required />
+        </div>
+        <div>
+            <label for="lastname"> Last Name :</label>
+            <input type="text" placeholder="enter last name " id="lastname" name="lastname" required />
+        </div>
+        <fieldset style="border:0; margin:10px">
+            <legend style="display:inline-block">Sex </legend>
+            <label for="sex">Female :</label>
+            <input type="radio" id="sex" name="sex" />
+            <label for="sex">Male :</label>
+            <input type="radio" id="sex" name="sex" />
+        </fieldset>
+        <div>
+            <label for="birthday">Birthday :</label>
+            <input type="text" placeholder="00/00/0000 " id="birthday" name="birthday" required />
+        </div>
+        <div>
+            <label for="email"> E-mail :</label>
+            <input type="email" placeholder="enter email " id="email" name="email" />
+        </div>
+        <div>
+            <label for="countrycode">country code :</label>
+            <input type="text" id="countrycode" value="+91" size="2" required />
+            <label for="phone">Phone Number :</label>
+            <input type="text" id="phone" name="phone" size="10" required />
+        </div>
+        <fieldset>
+            <div>
+                <label for="address">Address :</label>
+                <input type="text" id="address" name="address" required />
+            </div>
+            <div>
+                <label for="street">Street :</label>
+                <input type="text" id="street" name="street" />
+            </div>
+            <div>
+                <label for="landmark">Land Mark :</label>
+                <input type="landmark" id="landmark" name="landmark" />
+            </div>
+            <div>
+                <label for="city">City :</label>
+                <input type="text" id="city" name="city" />
+            </div>
+            <div>
+                <label for="stateprovince">state/province : </label>
+                <select id="stateprovince" name="stateprovince " >
+                    <option value="state">State</option>
+                    <option value="province">Province</option>
+                </select>
+            </div>
+            <div>
+                <label for="zipcode">Zipcode :</label>
+                <input type="text" id="zipcode" name="zipcode" />
+            </div>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </form>
+</body>
+</html>
